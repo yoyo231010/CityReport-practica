@@ -14,9 +14,5 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvBienvenida.text = "¡Bienvenido a CityReport!"
-        binding.btnEmpezar.setOnClickListener {
-            Log.d("CityReport", "Botón presionado 🚀")
-        }
     }
 }

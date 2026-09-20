@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaIncidenciasFragment">
+
+    <fragment
+        android:id="@+id/listaIncidenciasFragment"
+        android:name="com.example.cityreport.ListaIncidenciasFragment"
+        android:label="fragment_lista_incidencias"
+        tools:layout="@layout/fragment_lista_incidencias" >
+        <action
+            android:id="@+id/action_listaIncidenciasFragment_to_detalleIncidenciaFragment"
+            app:destination="@id/detalleIncidenciaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleIncidenciaFragment"
+        android:name="com.example.cityreport.DetalleIncidenciaFragment"
+        android:label="fragment_detalle_incidencia"
+        tools:layout="@layout/fragment_detalle_incidencia" />
+</navigation>
